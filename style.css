@@ -1,0 +1,59 @@
+
+body{
+    margin: 0;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(#2e2a24, #161512);
+    font-family:sans-serif;
+    color: #bababa
+}
+
+.heading-banner{
+    display:flex;
+    justify-content: space-around;
+    font-size:.8rem;
+}
+
+.flex-container{
+    max-width: 600px;
+    display: flex;
+    margin:auto;/*Center this container*/
+    flex-direction: column;
+    flex-grow: 1;/*Unecessary for now*/
+}
+
+#card-container{
+    /* border: .2rem solid black; */
+    background: url("./res/lichessKnight.svg") no-repeat center;
+    background-color: rgba(71, 71, 71, 0.2);
+    padding: .2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:.3rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:100px;
+    background-color: rgba(186, 186, 186, .05);
+    border: .5px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    font-size:1.4rem;
+}
+
+.card:hover{
+    background-color: rgba(255, 100, 44, .2);
+    cursor: pointer;
+}
+
+.card-time{
+    font-size: 2.2rem;
+}
+
+.card-style{
+
+}
